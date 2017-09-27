@@ -20,7 +20,12 @@ class Polynomial{
 
 template <class T>
 T Polynomial<T>::add(T coefOne, T coefTwo, T coefThree){
- //some code here
+    std::cout<< "adding polynomials..."<< endl;
+    a += coefOne;
+    b += coefTwo;
+    c += coefThree;
+    std::cout<< "The new Polynomial is: "<< endl;
+    std::cout<< a <<"x^2 + " << b << "x + " << c << endl;
 }
 template <class T>
 T Polynomial<T>::multiply(T coefOne, T coefTwo, T coefThree){
